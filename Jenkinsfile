@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build Gruyere') {
           steps {
-            sh 'sudo make gruyere-start'
+            sh 'make gruyere-start'
           }
         }
       }
@@ -24,7 +24,7 @@ pipeline {
         }
         stage('gauntlt-test') {
           steps {
-            sh 'sudo gauntlt-docker ./attacks/xss/xss.attack'
+            sh 'gauntlt-docker ./attacks/xss/xss.attack'
           }
         }
       }
