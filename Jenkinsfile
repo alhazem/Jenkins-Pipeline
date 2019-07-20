@@ -8,11 +8,6 @@ pipeline {
             sh 'mvn clean'
           }
         }
-   //     stage('Build Gruyere') {
-   //       steps {
-           // sh 'make gruyere-start'
-     //     }
-     //   }
       }
     }
     stage('Test') {
