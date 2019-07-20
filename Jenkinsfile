@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build Gruyere') {
           steps {
-           /* sh 'make gruyere-start'
+           // sh 'make gruyere-start'
           }
         }
       }
